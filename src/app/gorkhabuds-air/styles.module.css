@@ -1,0 +1,140 @@
+.detailsPage{
+    padding: 2rem 12rem;
+}
+.topDetails{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 3rem;
+}
+
+.topImages{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.smallImageBox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+.smallImageBox img{
+    width: 7rem;
+    height: auto;
+}
+.mainImageBox img{
+    width: 100%;
+    height: auto;
+}
+.activeImg{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.descBox{
+    padding-top: 2rem;
+}
+.label{
+    color: red;
+    font-size: 1.2rem;
+}
+.descBox h1{
+    font-size: 2.5rem;
+}
+.descBox h3{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+.descBox h4{
+    font-size: 1.1rem;
+    font-weight: 550;
+    color: rgb(63, 63, 63);
+    margin-top: 1.5rem;
+}
+.descBox h4 i{
+    color: black;
+}
+.descBox h5{
+    font-size: 1.4rem;
+    font-weight: 350;
+}
+.colors{
+    margin-top: 0.5rem;
+    display: flex;
+}
+.colors div{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid lawngreen;
+    margin-left: 1rem;
+}
+.buttons{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.buttons button{
+    font-size: 1.25rem;
+    width: 50%;
+    text-align: center;
+    padding: 0.75rem 0;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.buyNow{
+    background-color: black;
+    color: white;
+}
+.cart{
+    border: 0.01px solid black;
+}
+.features{
+    margin-top: 2rem;
+}
+.features>div{
+    padding: 0.5rem 0;
+}
+.features>div{
+    display: flex;
+    align-items: center;
+}
+.features  img{
+    width: 60px;
+    height: auto;
+}
+.more h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.more p{
+    margin-top: 0.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(60, 60, 60);
+}
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .detailsPage{
+        padding: 1rem 1.5rem;
+        /* overflow: hidden; */
+    }
+    .topDetails{
+        grid-template-columns: 1fr;
+    }
+    .topImages{
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+    .smallImageBox{
+        flex-direction: row;
+        overflow-x: scroll;
+    }
+    .smallImageBox img{
+        width: 6rem;
+    }
+}

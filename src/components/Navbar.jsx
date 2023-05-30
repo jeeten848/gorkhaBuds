@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav>
         <div className="logo">
-            Gorkha Buds
+            <Link href='/'>Gorkha Buds</Link> 
         </div>
 
         <div className="navLinks">

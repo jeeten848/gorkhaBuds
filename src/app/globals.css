@@ -8,9 +8,17 @@
 ::-webkit-scrollbar{
     display: none;
 }
-body{
+nav{
     background-color: #201835;
     color: #FFF;
+}
+.darkBg,.featuresBox,.section3,.steps,.squaresBox,.productCard{
+    background-color: #201835;
+    color: white;
+}
+.lightBg{
+    background-color: white;
+    color: black;
 }
 nav{
     /* border: 0.01px solid rgb(85, 93, 15); */
@@ -30,8 +38,8 @@ nav a{
     font-weight: 500;
     color: white;
 }
-nav .logo{
-    font-size: 1.5rem;
+nav .logo a{
+    font-size: 2rem;
     color: white;
     font-weight: 600;
 }
@@ -41,20 +49,20 @@ nav .logo{
 .section2{
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 2.25fr 1fr 2.25fr;
     place-items: center;
     /* color: white;
     background-color: black; */
 }
 .section2>div h2{
-    font-size: 2rem ;
+    font-size: 2.25rem ;
     margin-top: 1rem;
 }
 .section2>div p{
-    /* font-size: 2rem ; */
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 600;
+    color: #555555;
     line-height: 1.5rem;
 }
 .section2 .div1{
@@ -78,6 +86,10 @@ nav .logo{
 }
 .section3>div{
     padding: 1.2rem 1.5rem;
+}
+.steps>div div:hover{
+    /* box-shadow: inset 1px 4px 30px rgba(0, 0, 0, 0.1); */
+    background: rgba(165, 165, 165, 0.2);
 }
 .steps h2{
     font-size: 2.5rem;
@@ -114,8 +126,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 
 .productCard{
-    background-color: #e7e7e7;
-    background: linear-gradient(#201835, #221C31, #4b455b, #221C31, #201835);
+    /* background-color: #e7e7e7; */
+    /* background: linear-gradient(#201835, #221C31, #4b455b, #221C31, #201835); */
     padding: 2rem 13rem;
 }
 
@@ -132,9 +144,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .grid3 .pCard{
     background-color: white;
     border-radius: 1.5rem;
-    box-shadow: 2px 4px 12px rgba(0,0,0,.1);
+    /* border: 0.001px solid rgba(0,0,0,0.3);
+    box-shadow: 3px 4px 12px rgba(0,0,0,0.2), inset  3px 4px 12px rgba(0,0,0,0.2);
     overflow: hidden;
-    transition: box-shadow .3s ease,transform .3s ease,-webkit-box-shadow .3s ease,-webkit-transform .3s ease;
+    transition: box-shadow .3s ease,transform .3s ease,-webkit-box-shadow .3s ease,-webkit-transform .3s ease; */
 }
 .pCard .heading{
     padding: 2rem;
@@ -159,7 +172,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .pCard .colors div{
     width: 1.5rem;
     height: 1.5rem;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     border-radius: 50%;
     margin: 0.3rem;
 }
@@ -168,22 +181,31 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     overflow: hidden;
     display: grid;
     place-items: center;
-    background-color: white;
+    /* background-color: red; */
     color: black;
+    position: relative;
+    padding: 0;
 }
 .ancBox img{
     width: 100%;
+    height: auto;
+    /* background-color: #201835; */
+}
+.ancImage{
+    background-color: white;
 }
 .ancBox h2{
+    position: absolute;
     font-size: 3rem;
-    transform: translateY(12rem);
+    top: 10rem;
 }
 .ancBox h4{
+    position: absolute;
     font-size: 2rem;
-    transform: translateY(12rem);
+    top: 13.5rem;
 }
 .squaresBox{
-    padding: 5rem 13rem;
+    padding: 6rem 13rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 3rem;
@@ -195,11 +217,15 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     place-items: center;
     padding: 2rem 1.5rem;
     background: rgba(255, 255, 255, 0.2);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.square:hover{
+    box-shadow: 1px 4px 30px rgba(147, 147, 147, 0.5);
+
 }
 .square img{
     margin-bottom: 2rem;
@@ -241,16 +267,29 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     text-align: center;
     font-size: 1.25rem;
 }
+.featuresBox>div div:hover{
+    box-shadow: 1px 4px 30px rgba(147, 147, 147, 0.5);
+}
 .featuresBox>div img{
     width: 100%;
     height: auto;
+    border-radius: 20px;
 }
 
 
 
-
-
-
+.royalBlue{
+    background-color: rgb(9, 9, 86);
+}
+.royalGreen{
+    background-color: rgb(3, 50, 3);
+}
+.black{
+    background-color: black;
+}
+.green{
+    background-color: rgb(77, 153, 77);
+}
 
 
 

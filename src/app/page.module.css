@@ -1,19 +1,28 @@
 /* .main{
     padding: 1rem 10.5rem;
 } */
+.darkBg,.leftHero,.rightHero{
+    background-color: #201835;
+    color: white;
+}
+.lightBg{
+    background-color: white;
+    color: black;
+}
 .leftHero{
     display: grid;
     grid-template-columns: 3fr 2fr;
-    padding: 0 10.5rem;
-    /* gap: 2rem; */
+    padding: 2rem 12rem 0 12rem;
+    gap: 5rem;
 }
 .rightHero{
     display: grid;
-    grid-template-columns: 2.5fr 3fr;
-    padding: 1rem 10.5rem;
+    grid-template-columns: 2fr 3fr;
+    padding: 0rem 10.5rem 0 10.5rem;
+    gap: 5rem;
 }
 .descBox{
-    padding: 8rem 1rem 3rem 5rem;
+   padding-top: 6rem;
 }
 .descBox h1{
     font-size: 3.5rem;
@@ -29,10 +38,10 @@
 .imgBox{
     display: grid;
     place-items: center;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 .imgBox img{
-    width: 85%;
+    width: 100%;
     height: auto;
     transform: scaleX(-1);
 }
