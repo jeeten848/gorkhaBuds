@@ -317,7 +317,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     height: auto;
 }
 .blog h2{
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     text-align: center;
     text-decoration: none;
     /* color: black; */
@@ -327,28 +327,93 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     color: #150f7e;
     text-decoration: underline;
 }
+.blogPage{
+    padding: 2rem 12rem;
+}
+.blogPage h1{
+    font-size: 2.5rem;
+}
+.blogPage .topDesc{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(82, 82, 82);
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+.blogMain{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.blogPost{
+    margin-top: 3rem;
+}
+.blogPost h2{
+    font-size: 1.75rem;
+}
+.blogPost .images{
+    display: flex;
+    justify-content: space-around;
+}
+.blogPost .images img{
+    width: 45%;
+    height: auto;
+}
+.blogPost p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    margin-top: 1.5rem;
+    line-height: 2rem;
+}
+.blogPost ul{
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+}
 
 
 
 
-
-
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1050px){
     :root{
-        font-size: 12.5px;
+        font-size: 13.5px;
     }
     nav{
-        display: block;
-        padding: 0;
+        padding: 0 6rem;
+    }
+    .blogsPage, .blogPage{padding: 1.25rem 6rem;}
+    .blogMain{grid-template-columns: 2.45fr 1fr;}
+}
+@media screen and (max-width: 800px){
+    :root{
+        font-size: 11.5px;
+    }
+    .blogsPage, .blogPage{padding: 1.25rem 4rem;}
+    .blogMain{grid-template-columns: 1fr;}
+    nav{
+        /* display: block; */
+        padding: 0 4rem;
     }
 }
 @media screen and (max-width: 500px){
     :root{
-        font-size: 12px;
+        font-size: 10.5px;
     }
+    nav{display: block; text-align: center;padding: 0 1rem;}
+    .navLinks{justify-content: space-evenly;}
+    .blogsPage, .blogPage{padding: 1rem 2rem;}
+    .blogsBox{grid-template-columns: 1fr 1fr; gap: 1rem;}
+    .blogsBox h2{font-size: 1.25rem;}
+    .blogsPage>p, .blogPage .topDesc{font-size: 1rem; line-height: 1.5rem;}
+    .blogPost p{margin-top: 1rem;}
+    .blogPage h1{font-size: 2rem;}
 }
 @media screen and (max-width: 350px){
     :root{
-        font-size: 11px;
+        font-size: 10px;
     }
+    .blogsPage, .blogPage{padding: 0.5rem 1.5rem;}
+    .blogPost p{line-height: 1.75rem;}
 }
