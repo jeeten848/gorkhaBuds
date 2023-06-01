@@ -25,7 +25,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 6rem;
+    height: 5rem;
     padding: 0 10.5rem;
 }
 .navLinks{
@@ -290,7 +290,43 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .green{
     background-color: rgb(77, 153, 77);
 }
-
+.blogsPage{
+    padding: 2rem 12rem;
+}
+.blogsPage>h1{
+    font-size: 2rem;
+}
+.blogsPage>p{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: grey;
+    margin-top: 1rem;
+}
+.blogsBox{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.blogsBox a{
+    text-decoration: none;
+    color: black;
+}
+.blog img{
+    width: 100%;
+    height: auto;
+}
+.blog h2{
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    /* color: black; */
+    margin: 0.5rem 0;
+}
+.blogsBox a:hover{
+    color: #150f7e;
+    text-decoration: underline;
+}
 
 
 

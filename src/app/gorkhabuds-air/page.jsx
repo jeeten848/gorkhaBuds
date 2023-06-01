@@ -60,7 +60,16 @@ export default function page() {
         </div>
 
       </div>
-      
+
+      <div className={styles.midDetails}>
+        <div>hello hell ohello world</div>
+        <div>hello hell ohello world</div>
+        <div>hello hell ohello world</div>
+        <div>hello hell ohello world</div>
+        <div>hello hell ohello world</div>
+        <div>hello hell ohello world</div>
+      </div>
+
     </div>
   )
 }
