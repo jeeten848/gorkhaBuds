@@ -1,14 +1,23 @@
+'use client';
+
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function ProductCard() {
-  return (
+
+
+
+
+    
+
+    return (
     <div className="productCard">
+
         <div className="grid3">
 
             
-            <div className="pCard">
+            <div className="pCard" id='firstProduct'>
                 <Link href='./gorkhabuds-air'>
                 <div className="heading">
                     <h3>GorkhaBuds air</h3>
@@ -26,7 +35,7 @@ export default function ProductCard() {
             </div>
             
 
-            <div className="pCard">
+            <div className="pCard" id='secondProduct'>
                 <Link href='./gorkhabuds-air'>
                 <div className="heading">
                     <h3>GorkhaBuds air</h3>
@@ -44,7 +53,7 @@ export default function ProductCard() {
             </div>
             
 
-            <div className="pCard">
+            <div className="pCard"  id='thirdProduct'>
                 <Link href='./gorkhabuds-air'>
                 <div className="heading">
                     <h3>GorkhaBuds air</h3>

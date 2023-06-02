@@ -3,6 +3,7 @@ import Image from 'next/image'
 import J18 from '../../public/images/j18 blue.jpg'
 
 export default function Features() {
+
   return (
     <div className='featuresBox'>
         <div>
@@ -12,7 +13,7 @@ export default function Features() {
             <div>Bluetooth 5.1 or more</div>
         </div>
 
-        <div>
+        <div className='featuresImage'>
             <Image src={J18} alt='J1 earbuds' />
         </div>
 

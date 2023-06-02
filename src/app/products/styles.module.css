@@ -35,7 +35,7 @@
 .features{
     margin-top: 1.8rem;
     margin-left: 1.2rem;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
 }
 .features li{
     line-height: 1.4rem;
@@ -99,10 +99,10 @@
 
 @media screen and (max-width: 500px){
     .productsPage{
-        padding: 1rem 2rem;
+        padding: 1rem 1.5rem;
     }
     .grid2{
-        width: 85%;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -113,10 +113,9 @@
 
 @media screen and (max-width: 350px){
     .productsPage{
-        padding: 1rem 1.5rem;
+        padding: 1rem 1.25rem;
     }
     .grid2{
-        width: 90%;
         display: flex;
         flex-direction: column;
     }

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Section2 from "@/components/Section2";
 import Steps from "@/components/Steps";
 import ProductCard from "@/components/ProductCard";
 import Anc from "../../public/images/anc.svg";
@@ -9,6 +8,11 @@ import TopView from "../../public/images/top view.jpg";
 import Squares from "@/components/Squares";
 import Features from "@/components/Features";
 import Leather1 from "../../public/images/leather.webp";
+import MainPhoto from "../../public/images/mainPhoto.png";
+import MainPhoto2 from "../../public/images/mainPhoto2.png";
+import MainPhoto3 from "../../public/images/mainPhoto3.png";
+
+
 
 
 export default function Home() {
@@ -16,7 +20,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.leftHero}>
         <div className={styles.descBox}>
-          <h1>Best wireless earbuds in Nepal</h1>
+          <h1>GorkhaBuds - Best earbuds in Nepal</h1>
           <p>
             Welcome to GorkhaBuds, where we provide the best earbuds in Nepal.
             Our earbuds are designed to provide you with the ultimate audio
@@ -28,7 +32,7 @@ export default function Home() {
         </div>
         <div className={styles.imgBox}>
           <Image
-            src="https://s.alicdn.com/@sc04/kf/Hd97edf4a42e44697a990384a03453bd92.jpg_960x960.jpg"
+            src={MainPhoto2}
             alt="gorkha buds"
             width={200}
             height={200}
@@ -44,8 +48,6 @@ export default function Home() {
             // src="https://ae01.alicdn.com/kf/Ha52427a86b4a4ee693c9c90f5248d9aad.jpg"
             src={Leather1}
             alt="gorkha buds"
-            width={200}
-            height={200}
           />
         </div>
         <div className={styles.descBox}>
@@ -61,6 +63,9 @@ export default function Home() {
         </div>
       </div>
 
+      <Squares />
+
+
 
       <div className="ancBox">
         <h2>Active Noise Cancellation</h2>
@@ -75,9 +80,6 @@ export default function Home() {
 
       <Features />
 
-      <Section2 className="lightBg"/>
-
-      <Squares />
 
       <div className="leatherBox ancBox">
         <h2>Active Noise Cancellation</h2>

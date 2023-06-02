@@ -63,9 +63,9 @@ export default function page() {
 
       <div className={styles.midDetails}>
         <div>hello hell ohello world</div>
+        <div>Active Noise Cancellation</div>
         <div>hello hell ohello world</div>
-        <div>hello hell ohello world</div>
-        <div>hello hell ohello world</div>
+        <div>Latency less than 30ms</div>
         <div>hello hell ohello world</div>
         <div>hello hell ohello world</div>
       </div>

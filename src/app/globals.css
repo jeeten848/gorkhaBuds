@@ -43,42 +43,11 @@ nav .logo a{
     color: white;
     font-weight: 600;
 }
-.container{
-    padding: 5rem 10.5rem;
+.steps{
+    padding: 3rem 0;
 }
-.section2{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2.25fr 1fr 2.25fr;
-    place-items: center;
-    /* color: white;
-    background-color: black; */
-}
-.section2>div h2{
-    font-size: 2.25rem ;
-    margin-top: 1rem;
-}
-.section2>div p{
-    margin-top: 1.5rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #555555;
-    line-height: 1.5rem;
-}
-.section2 .div1{
-    transform: translateX(4rem);
-}
-.section2 .div3{
-    transform: translateX(-4rem);
-}
-/* .section2 img{
-    
-} */
-/* .steps{
-    
-} */
 .section3{
-    margin:  2rem auto;
+    margin:  1rem auto;
     width: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -116,7 +85,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom-left-radius: 20px;
 }
 .section3 .step2{
-    border: 0.001px solid rgb(185, 175, 156);
+    border-top: 0.001px solid rgb(185, 175, 156);
+    border-bottom: 0.001px solid rgb(185, 175, 156);
 }
 .section3 .step3{
     border: 0.001px solid rgb(185, 175, 156);
@@ -240,14 +210,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     font-weight: 400;
     text-align: center;
 }
-
-
 .featuresBox{
     padding: 4rem 10rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 .featuresBox>div{
     display: flex;
@@ -256,8 +224,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     align-items: center;
 }
 .featuresBox>div div{
-    width: 25rem;
-    padding: 2rem 0;
+    width: 100%;
+    padding: 1.75rem 0;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -334,9 +302,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     font-size: 2.5rem;
 }
 .blogPage .topDesc{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    color: rgb(82, 82, 82);
+    color: rgb(34, 34, 34);
     margin-top: 1rem;
     line-height: 2rem;
 }
@@ -368,9 +336,11 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .blogPost ul{
     margin-top: 1.5rem;
     margin-left: 1rem;
-    font-size: 1.1rem;
-    line-height: 2.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
+}
+.blogPost ul li{
+    line-height: 2.75rem;
 }
 
 
@@ -383,37 +353,69 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     nav{
         padding: 0 6rem;
     }
-    .blogsPage, .blogPage{padding: 1.25rem 6rem;}
+    .blogsPage, .blogPage, .productCard{padding: 1.25rem 6rem;}
     .blogMain{grid-template-columns: 2.45fr 1fr;}
+    .pCard .heading{padding: 1.25rem;}
+    .pCard .heading h3{font-size: 1.75rem;}
+    .pCard .imgBox img{width: 100%; height: auto;}
+    .ancBox h2{top: 3rem;}
+    .ancBox h4{top: 6.5rem;}
+    .featuresBox{padding: 4rem 6rem;margin-top: 0;}
+    .featuresBox>div div{padding: 1.25rem 0; border-radius: 12px;}
+    .squaresBox{padding: 4rem 6rem; gap: 2rem;}
+    .square img{margin-bottom: 1rem;}
+    .square h3{font-size: 1.5rem; margin-bottom: 1.5rem;}
+    .square p{font-size: 1rem;}
+    .section3{width: 80%;}
+    .section3>div{font-size: 1.25rem; margin-bottom: 2rem;}
 }
 @media screen and (max-width: 800px){
     :root{
         font-size: 11.5px;
     }
-    .blogsPage, .blogPage{padding: 1.25rem 4rem;}
+    .blogsPage, .blogPage, .productCard{padding: 1.25rem 4rem;}
     .blogMain{grid-template-columns: 1fr;}
-    nav{
-        /* display: block; */
-        padding: 0 4rem;
-    }
+    nav{padding: 0 4rem;}
+    .featuresBox{padding: 4rem 4rem;}
+    .featuresBox>div div{padding: 1rem 0; border-radius: 10px;}
+    .squaresBox{padding: 4rem 4rem; gap: 1rem;}
+    .square{padding: 1.5rem 1rem;}
 }
 @media screen and (max-width: 500px){
     :root{
-        font-size: 10.5px;
+        font-size: 12px;
     }
     nav{display: block; text-align: center;padding: 0 1rem;}
     .navLinks{justify-content: space-evenly;}
-    .blogsPage, .blogPage{padding: 1rem 2rem;}
+    .blogsPage, .blogPage{padding: 1rem 1.25rem;}
     .blogsBox{grid-template-columns: 1fr 1fr; gap: 1rem;}
     .blogsBox h2{font-size: 1.25rem;}
-    .blogsPage>p, .blogPage .topDesc{font-size: 1rem; line-height: 1.5rem;}
-    .blogPost p{margin-top: 1rem;}
-    .blogPage h1{font-size: 2rem;}
+    .blogsPage>p{font-size: 1.1rem; line-height: 1.5rem;}
+    .blogPost p{margin-top: 1.25rem;}
+    .blogPage h1{font-size: 2.25rem;}
+    /* .squaresBox{display: none;} */
+    .ancBox h2{font-size: 1.75rem; top: 1rem;}
+    .ancBox h4{font-size: 1.25rem; top: 3rem;}
+    .featuresBox{padding: 3rem 1.25rem;display: flex;flex-direction: column; gap: 0.5rem;}
+    .featuresBox>div{display: grid;grid-template-columns: 1fr 1fr; gap: 1rem;}
+    .featuresBox>div div{border-radius: 8px;font-size: 1rem;}
+    .featuresImage img{display: none;}
+    .featuresBox{background-image: url("https://ultimanepal.com/assets/img/frontend/earbud-320/1.png"); background-size: cover; background-position: center;}
+    .steps{padding: 3rem 2rem;}
+    .section3{width: 100%;display: flex;flex-direction: column;}
+    .section3>div{padding: 0.95rem 1.25rem; margin-bottom: 1rem;border-radius: 1.25rem;}
+    .steps h2{font-size: 2rem; margin-bottom: 2rem;}
+    .section3 p{font-size: 1rem;margin: 0.25rem 0;}
+    .productCard{overflow: hidden; padding: 0;}
+    .productCard .grid3{display: flex;overflow-x: scroll;padding: 2rem 3rem;}
+    .pCard .imgBox img{width: 23rem;}
+    .squaresBox{padding: 4rem 2rem; gap: 1rem;grid-template-columns: 1fr 1fr;}
+    .square h3{font-size: 1.4rem; margin-bottom: 0.75rem;}
 }
 @media screen and (max-width: 350px){
-    :root{
-        font-size: 10px;
-    }
-    .blogsPage, .blogPage{padding: 0.5rem 1.5rem;}
-    .blogPost p{line-height: 1.75rem;}
+    :root{font-size: 11.5px;}
+    .blogsPage, .blogPage{padding: 0.5rem 1.3rem;}
+    /* .blogPost p{line-height: 1.75rem;} */
+    .blogPage h1{font-size: 2rem;}
+    .squaresBox{padding: 3rem 1.25rem;}
 }
