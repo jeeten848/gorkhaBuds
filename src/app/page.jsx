@@ -26,6 +26,7 @@ export default function Home() {
             // src="https://ae01.alicdn.com/kf/Ha52427a86b4a4ee693c9c90f5248d9aad.jpg"
             src={Long}
             alt="gorkha buds"
+            priority
           />
         </div>
         <div className={styles.descBox}>
@@ -48,7 +49,7 @@ export default function Home() {
 
       <div className={styles.leftHero}>
         <div className={styles.descBox}>
-          <h1>GorkhaBuds - Best earbuds in Nepal</h1>
+          <h2>GorkhaBuds - Best earbuds in Nepal</h2>
           <p>
             Welcome to GorkhaBuds, where we provide the best earbuds in Nepal.
             Our earbuds are designed to provide you with the ultimate audio
