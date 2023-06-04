@@ -12,20 +12,22 @@
 .leftHero{
     display: grid;
     grid-template-columns: 3fr 2fr;
-    padding: 1rem 12rem 2rem 12rem;
+    padding: 1rem 12rem 3rem 12rem;
     /* gap: 5rem; */
 }
 .rightHero{
     display: grid;
     grid-template-columns: 2fr 3fr;
-    padding: 0rem 10.5rem 0 10.5rem;
-    gap: 5rem;
+    gap: 2rem;
+    padding: 0rem 12rem;
+    background-color: #dedede;
+    /* color: white; */
 }
-.descBox{
-   padding-top: 6rem;
+.leftHero .descBox{
+   padding-top: 4rem;
 }
 .descBox h1{
-    font-size: 3.5rem;
+    font-size: 3.25rem;
     font-weight: 700;
     margin-bottom: 1.8rem;
 }
@@ -38,8 +40,9 @@
 .imgBox{
     display: grid;
     place-items: center;
-    --tw-gradient-from: #707070;
-    --tw-gradient-to: rgb(112 112 112 / 0);
+    width: 100%;
+    /* --tw-gradient-from: #707070;
+    --tw-gradient-to: rgb(112 112 112 / 0); */
     /* --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); */
     /* margin-top: 3rem; */
 }
@@ -51,6 +54,10 @@
     --tw-gradient-to: rgb(112 112 112 / 0);
     /* transform: scaleX(-1); */
 }
+.rightHero .descBox{
+    display: flex;
+    align-items: center;
+}
 .button1{
     padding: 1rem 2.15rem;
     border: none;
@@ -61,30 +68,34 @@
 }
 
 
-.rightHero h2{
+.leftHero h2{
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
 
 @media screen and (max-width: 1050px){
-    .leftHero, .rightHero{padding: 1rem 6rem; gap: 0rem;}
-    .descBox{padding-top: 2rem;}
+    .leftHero, .rightHero{padding: 0rem 6rem; gap: 2rem;}
+    .descBox h1{font-size: 2.5rem; margin-bottom: 1rem;}
+    .descBox p{font-size: 1.15rem; margin-bottom: 1rem;}
 }
 
 
 @media screen and (max-width: 800px){
     .leftHero, .rightHero{padding: 1rem 4rem;}
+    /* .rightHero{padding: 0;} */
 }
 
 
 @media screen and (max-width: 500px){
-    .leftHero, .rightHero{padding: 1rem 1.25rem;gap: 0; padding-bottom: 2rem;}
+    .leftHero{padding: 1rem 1.25rem;gap: 0; padding-bottom: 2rem;}
+    .rightHero{padding: 0; gap: 0;padding-bottom: 2rem;}
     .leftHero{display: flex;flex-direction: column-reverse;}
     .rightHero{display: flex;flex-direction: column;}
-    .descBox{padding-top: 1rem;}
+    .leftHero .descBox{padding-top: 1rem;}
     .descBox h1{font-size: 2.25rem; margin-bottom: 1rem;}
     .descBox h2{font-size: 2rem; margin-bottom: 1rem;}
+    .rightHero .descBox{padding: 0 1.25rem;}
     
    
 }
