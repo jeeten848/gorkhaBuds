@@ -11,20 +11,20 @@
 }
 .leftHero{
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    padding: 1rem 12rem 3rem 12rem;
-    /* gap: 5rem; */
+    grid-template-columns: 3fr 2.25fr;
+    padding: 2rem 12rem 2rem 12rem;
+    gap: 3rem;
     
-    background-color: #201835;
-    color: white;
+    /* background-color: #201835;
+    color: white; */
 }
 .rightHero{
     display: grid;
     grid-template-columns: 2fr 3.5fr;
     gap: 2rem;
-    padding: 0rem 15rem;
-    background-color: #201835;
-    color: white;
+    padding: 0rem 12rem 0rem 0rem;
+    /* background-color: #201835;
+    color: white; */
 }
 .leftHero .descBox{
    padding-top: 4rem;
@@ -44,16 +44,14 @@
     display: grid;
     place-items: center;
     width: 100%;
-    /* --tw-gradient-from: #707070;
-    --tw-gradient-to: rgb(112 112 112 / 0); */
-    /* --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); */
     /* margin-top: 3rem; */
-    background: rgba(255, 255, 255, 0.2);
+    
+    /* background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3); */
 }
 .imgBox img{
     width: 100%;
@@ -84,14 +82,16 @@
 
 
 @media screen and (max-width: 1050px){
-    .leftHero, .rightHero{padding: 0rem 6rem; gap: 2rem;}
+    .leftHero{padding: 0rem 6rem; gap: 3rem;}
+    .rightHero{padding: 0 6rem 0 0; gap: 2rem;}
     .descBox h1{font-size: 2.5rem; margin-bottom: 1rem;}
     .descBox p{font-size: 1.15rem; margin-bottom: 1rem;}
 }
 
 
 @media screen and (max-width: 800px){
-    .leftHero, .rightHero{padding: 1rem 4rem;}
+    .leftHero{padding: 1rem 4rem;}
+    .rightHero{padding: 0 4rem 0 0}
     /* .rightHero{padding: 0;} */
 }
 

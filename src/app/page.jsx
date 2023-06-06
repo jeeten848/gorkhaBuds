@@ -4,14 +4,15 @@ import Steps from "@/components/Steps";
 import ProductCard from "@/components/ProductCard";
 import Anc from "../../public/images/anc.svg";
 import Leather from "../../public/images/leather.svg";
-import TopView from "../../public/images/top view.jpg";
+import Curved from "../../public/images/curved.svg";
+import AncMobile from "../../public/images/ancMobile.svg";
+import LeatherMobile from "../../public/images/leatherMobile.svg";
+import CurvedMobile from "../../public/images/curvedMobile.svg";
 import Squares from "@/components/Squares";
 import Features from "@/components/Features";
-import Leather1 from "../../public/images/leather.webp";
-import ThirdSmall from "../../public/images/thirdSmall.png";
 import Long from "../../public/images/long.png";
 import MainPhoto2 from "../../public/images/mainPhoto2.png";
-import MainPhoto3 from "../../public/images/mainPhoto3.png";
+import Identify from "@/components/Identify";
 
 
 
@@ -79,24 +80,50 @@ export default function Home() {
         <h2>Active Noise Cancellation</h2>
         <h4>on every earbuds</h4>
         <Image
-          priority
           src={Anc}
           alt="GorkhaBuds - Active Noise Cancellation"
-          className="ancImage"
+          className="laptopImage"
+        />
+        <Image
+          src={AncMobile}
+          className="mobileImage"
+          alt="GorkhaBuds - Active Noise Cancellation"
         />
       </div>
 
       <Features />
 
+      <div className="ancBox">
+        <h2>Active Noise Cancellation</h2>
+        <h4>on every earbuds</h4>
+        <Image
+          src={Curved}
+          alt="GorkhaBuds - Active Noise Cancellation"
+          className="laptopImage"
+          
+        />
+        <Image
+          src={CurvedMobile}
+          className="mobileImage"
+          alt="GorkhaBuds - Active Noise Cancellation"
+        />
+      </div>
+
+<Identify />
 
       <div className="leatherBox ancBox">
         <h2>Active Noise Cancellation</h2>
         <h4>on every earbuds</h4>
 
         <Image
-          priority
           src={Leather}
           alt="GorkhaBuds - Active Noise Cancellation"
+          className="laptopImage"
+        />
+        <Image
+          src={LeatherMobile}
+          alt="GorkhaBuds - Active Noise Cancellation"
+          className="mobileImage"
         />
       </div>
 
